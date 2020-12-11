@@ -1,0 +1,39 @@
+.about_me{
+    display: grid;
+    height: auto;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 15%;
+    width: 100%;
+    grid-template-rows: repeat(4,20%);
+    grid-template-columns: repeat(4,20%);
+    grid-template-columns: 100px minmax(100px, 500px);
+    grid-template-rows: 100px minmax(100px, 500px);
+    background-color: peachpuff;
+    opacity: 0.8;
+}
+@media only screen and(max-width: 700px){
+    .about_me{
+        width: 100%;
+    }
+    .lit{
+        image-orientation: landscape;
+    }
+}
+.i{
+    width: 100%;
+}
+.lit{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 30px;
+    image-orientation: landscape;
+}
+p{
+    padding-left: 10%;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}

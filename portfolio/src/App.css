@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+}
+.App{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  display: block;
+  justify-items: center;
+  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../src/picture/pink_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+
+}
+@media only screen and (max-width: 500px){
+  .App{
+    width: 100%;
+  }
+}
+
+

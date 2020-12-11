@@ -1,0 +1,74 @@
+.cute_app{
+    display: grid;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 15%;
+    width: 60%;
+    grid-template-rows: repeat(4,20%);
+    grid-template-columns: repeat(4,20%);
+    grid-template-columns: 100px minmax(100px, 500px);
+    grid-template-rows: 100px minmax(100px, 500px);
+
+}
+@media only screen and (max-width:500px){
+    .cute_app{
+        width: 90%;
+    }
+}
+@media only screen and (min-width:1000px){
+    .cute_app{
+        padding-top: 30%;
+    }
+
+}
+.image{
+    z-index: -1;
+    border: 2px solid peachpuff;
+    border-radius: 20px;
+    padding: 5%;
+    
+}
+button{
+    margin-left: 20%;
+    width: 55%;
+    height: 40px;
+    border-radius: 30px;
+    border: 3px solid peachpuff;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+button:hover{
+    background-color: peachpuff; 
+    color: white;
+}
+h3{
+    color: darkkhaki;
+    font-size:1.75em;
+    font-family: cursive;
+}
+@media only screen and (max-width:500px){
+    button{
+        height: 40px;
+        margin-top: 2%;
+    }
+    h3{
+        font-size: 1.0em;
+    }
+    .image{
+        padding: 5%;
+    }
+}
+@media only screen and (min-width: 1000px){
+    button{
+        height: 50px;
+        margin-top: 3%;
+    }
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}

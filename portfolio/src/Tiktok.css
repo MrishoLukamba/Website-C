@@ -1,0 +1,40 @@
+.tiktok{
+    display: grid;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 15%;
+    width: 60%;
+    grid-template-rows: repeat(4,20%);
+    grid-template-columns: repeat(4,20%);
+    grid-template-columns: 100px minmax(100px, 500px);
+    grid-template-rows: 100px minmax(100px, 500px);
+
+}
+@media only screen and (max-width:500px){
+    .tiktok{
+        width: 80%;
+    }
+}
+@media only screen and (min-width:1000px){
+    .tiktok{
+        padding-top: 30%;
+    }
+
+}
+.video{
+    z-index: -1;
+    border: 2px solid peachpuff;
+    border-radius: 20px;
+    padding: 4%;
+}
+@media only screen and(max-width:500px){
+    .video{
+        padding: 2%;
+    }
+}
+.vid{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
